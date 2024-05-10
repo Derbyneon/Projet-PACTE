@@ -1,0 +1,685 @@
+.planning-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.planning-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+.planning-table th{
+  padding: 10px;
+  border: 1px solid #BEE3F8;
+  background-color: white;
+}
+
+.planning-table td {
+  padding: 15px;
+}
+.planning-table tr:nth-child(even) { background: #BEE3F8; }
+
+.date-header,
+.time-slot-header {
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #BEE3F8;
+}
+
+.date-row,
+.time-slot-cell {
+  padding: 5px;
+  border: 1px solid #BEE3F8;
+}
+
+.date-cell {
+  text-align: left;
+}
+
+
+.time-slot-cell.occupied {
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.add-planning-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none; 
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0; 
+  cursor: pointer; 
+  border-radius: 5px; 
+}
+
+.add-planning-button:hover {
+  background-color: #3e8e41; 
+}
+
+/* *********** connexion **************** */
+.connexion{
+  display: flex;
+  flex-direction: column;
+  background: white;
+  height: fit-content;
+  place-self: center;
+  margin: auto;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: center;
+  row-gap: 15px;
+  width: 40%;
+}
+.connexion h1{
+  color: black;
+  font-weight: bold;
+}
+
+.con-form{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.con-form input{
+  border: 1px solid #474141;
+  border-radius: 4px;
+  padding: 5px;
+  outline-color: blue;
+}
+
+.con-form button{
+  padding: 7px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.con__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.img-con{
+  height: auto;
+  overflow: hidden;
+  margin: 0;
+  width: 50%;
+}
+.img-con img{
+  width: 100%;
+}
+
+
+/* ********************** Inscription ***************** */
+#inscription{
+  display: flex;
+  justify-content: space-around;
+  background-color: #090c0d;
+  text-align: center;
+  height: 100%;
+  padding: 10px;
+  align-items: center;
+}
+
+.inscription{
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  width: min-content;
+  height: 100%;
+  background-color: white;
+  padding: 5px 20px;
+  row-gap: 15px;
+  margin-left: 20px;
+  align-self: center;
+  border-radius: 3px;
+}
+
+.img img{
+  height: 100%;
+  border-radius: 3px;
+}
+
+
+.infos{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.inscription h1{
+  font-weight: bolder;
+}
+
+.perso-info{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.perso-info input,
+.perso-info select{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  outline-color: blue;
+}
+
+
+.other-info{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.other-info input,
+.other-info select,
+.other-info textarea{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  outline-color: blue;
+}
+ 
+
+.insc-form button{
+  padding: 7px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+
+/* ********************** AJOUTER UN PLANING ******************* */
+#ajout-planing{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.ajout-planing-form{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.ajout-planing-form input,
+.ajout-planing-form select{
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline-color: blue;
+}
+
+.ajout-planing-form button{
+  background-color: #3e8e41;
+  color: white;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* ************************* AJOUT ABONNEMENT ************** */
+#ajout-abonnement{
+  display: flex;
+  justify-content: center;
+}
+
+.ajout-abon-form-container{
+  background-color: white;
+  border-radius: 4px;
+}
+
+.ajout-abon-form{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 15px;
+  text-align: center;
+  row-gap: 10px;
+}
+
+.ajout-abon-form input{
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+  outline-color: blue;
+}
+
+.ajout-abon-form button{
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none; 
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0; 
+  cursor: pointer; 
+  border-radius: 5px; 
+}
+
+/*********** ******* TABLE CLIENT ************* */
+#table-client {
+  display: flex;
+  justify-content: center;
+}
+
+.tb-client{
+  display: 
+  flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 15px;
+  row-gap: 10px;
+  border-radius: 4px;
+  text-align: center;
+  width: 100%;
+}
+
+.tb-client input{
+  border: 2px solid #ccc;
+  padding: 5px;
+  width: auto;
+  border-radius: 4px;
+  outline-color: blue;
+}
+
+.client-table{
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.client-table th{
+  padding: 15px;
+  border: 1px solid #BEE3F8;
+  background-color: #BEE3F8;
+}
+
+.client-table td {
+  padding: 15px;
+  border: 1px solid #BEE3F8;
+}
+.client-table tr:nth-child(even) { background: #BEE3F8; }
+
+.client-table button{
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+#add-btn{
+  background-color: blueviolet;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+
+/* ********************** PAIEMENT CLIENT *************** */
+#paiement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+#paiement h1{
+  font-weight: bold;
+  color: blueviolet;
+}
+
+
+.table{
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: white;
+  width: 100%;
+}
+
+.table th{
+  padding: 10px;
+  border: 1px solid #BEE3F8;
+}
+
+.table td {
+  padding: 15px;
+  border: 1px solid #BEE3F8;
+}
+.table tr:nth-child(even) { background: #BEE3F8; }
+
+.table button{
+  background: red;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all .3s ease;
+  padding: 5px;
+}
+/* *************** FACTURES **************** */
+#facture {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#facture h1{
+  color: blueviolet;
+  font-weight: bold;
+}
+
+/* ** *************** HomeClient *************** */
+.facture-paiement{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#home__cl{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 122%;
+}
+#h1-home{
+  font-style: italic;
+  margin-top: 77px;
+}
+
+
+.en-ov h1,
+.pl h1{
+  font-weight: bold;
+  margin: 30px 20px 10px;
+  color: blueviolet;
+}
+
+
+/************** AJOUT ABONNEMENTS ************** */
+#abonnement{
+  display: flex;
+  justify-content: center;
+}
+
+.abonnement{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  row-gap: 10px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.abonnement input{
+  border: 2px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+  width: 100%;
+  outline-color: blue;
+}
+
+
+#ajout-ab{
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all .3s ease;
+  padding: 5px;
+  background-color: blueviolet;
+}
+
+
+/*********************** ENTRAINEUR TABLE *************/
+#entraineur{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.entraineur-table-cont{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 15px;
+  border-radius: 4px;
+  row-gap: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.entraineur-table-cont input{
+  border: 2px solid #ccc;
+  padding: 5px 15px;
+  border-radius: 4px;
+  outline-color: blue;
+}
+
+#aj-entraineur{
+  background: blueviolet;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all .3s ease;
+  padding: 5px;
+}
+
+/*** *********** FACTURE ***************/
+.payer-facture-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  max-width: 90vw; /* Maximum width of 90% of the viewport width */
+  overflow-y: auto; /* Add scroll if the content is larger than the max height */
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.facture-form{
+  background-color: white;
+  width: fit-content;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.facture-form h1{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+.payer-form{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.payer-form input{
+  border: 2px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+  outline: blue;
+}
+.payer-form button{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: blueviolet;
+  color: white;
+}
+
+#payer-facture{
+  display: flex;
+  justify-content: center;
+}
+
+/***************** EQUIPEMENT ******************/
+#equip-table{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+#equip-table input{
+  border: 2px solid #ccc;
+  padding: 5px;
+  outline-color: blue;
+  border-radius: 4px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.tb-equipement{
+  background-color: white;
+  width: 100%;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+/************GESTIONNAIRE **********/
+#gestionnaire-home{
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 122%;
+}
+
+.row-2{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.inner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  margin: 10px 50px;
+  padding: 20px 9px;
+  column-gap: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.inner-1{
+  width: 100%;
+}
+
+
+/********** AJOUT EQUIPEMENT ***********************/
+#ajout-equip{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aj-equip{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 15px;
+}
+.aj-equip input{
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/*************** AJOUT ENTRAINEUR ******************/
+.ajout-entr-form{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.ajout-entr-form input,
+.ajout-entr-form select,
+.ajout-entr-form textarea{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  outline-color: blue;
+}
+
+.ajout-entr-form button{
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.ajout-ent-container{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.ajout-ent-container h1{
+  color: black;
+  font-weight: bold;
+}
+
+#aj-entraineur{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E5E5E5;
+}
+.ajout-entr-form select{
+  color: black;
+}
+
+.ajout-entr-form input{
+  color: black;
+}

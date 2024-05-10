@@ -1,2 +1,2 @@
-# Projet-PACTE
-Création d'application de gestion de salle de sport
+# Go-Fit
+Projet pacte S6
